@@ -84,7 +84,7 @@ header{
     display:inline-block;
     color:#222222;
 }
-
+/************* navi *************/
 nav{
     font-family: Montserrat,sans-serif;
     color:#222222;
@@ -101,6 +101,10 @@ nav ul li{
     margin-right: 20px;
     letter-spacing: 0.5px;
     color:#bbbbbb;
+}
+
+.sm-menu{
+    display:none;
 }
 
 * {
@@ -130,6 +134,10 @@ nav ul li{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+a{
+    text-decoration: none;
+}
 
 /* footer */
 footer{
@@ -191,4 +199,138 @@ footer{
 
 /* contact */
 
-/* media quary */
+/********** media quary **********/
+
+/********* HUMBERGER MENU *********/
+
+@media (max-width:817px) {
+    .smmenu-icon-wrapper {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        height: 26px;
+        width: 26px;
+        cursor: pointer
+    }
+
+    .hamburgler-icon,
+    .hamburgler-icon:before,
+    .hamburgler-icon:after {
+        content: '';
+        position: absolute;
+        border-radius: 1em;
+        height: 2px;
+        width: 26px;
+        background: black;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease
+    }
+
+    .hamburgler-icon {
+        top: 0.75em
+    }
+
+    .hamburgler-icon:before {
+        top: -0.55em
+    }
+
+    .hamburgler-icon:after {
+        top: 0.55em
+    }
+
+    .hamburgler-active .hamburgler-icon {
+        background: transparent;
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg)
+    }
+
+    .hamburgler-active .hamburgler-icon:before,
+    .hamburgler-active .hamburgler-icon:after {
+        top: 0
+    }
+
+    .hamburgler-active .hamburgler-icon:before {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+
+    .hamburgler-active .hamburgler-icon,
+    .hamburgler-active .hamburgler-icon:before,
+    .hamburgler-active .hamburgler-icon:after {
+        background: white
+    }
+
+    .sm-menu {
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        text-align: center;
+    }
+
+    .hamburgler-active .sm-menu {
+        opacity: 1;
+        pointer-events: initial;
+    }
+
+    .sm-menu-list {
+        display: block;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        padding: 0;
+        list-style-type: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1.2);
+        transform: translate(-50%, -50%) scale(1.2)
+    }
+
+    .hamburgler-active .sm-menu-list {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1)
+    }
+
+    .sm-menu a {
+        color: #fff;
+    }
+
+    .sm-menu-list {
+        width: 100px;
+    }
+
+    .sm-menu-list li {
+        padding-bottom: 20px;
+    }
+
+    /*STACK ORDER*/
+    #sm-menu-f.smmenu-icon-wrapper {
+        z-index: 2;
+    }
+
+    .sm-menu {
+        z-index: 1;
+        height: 300px;
+    }
+
+    /* hide menu */
+    ul.menu {
+        display: none;
+    }
+
+    /* show hamburgler menu */
+    .sm-menu {
+        display: block;
+    }
+
+    nav ul li{
+        display:block;
+    }
+}
