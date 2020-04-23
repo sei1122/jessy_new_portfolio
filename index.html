@@ -12,14 +12,16 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
   </head>
+
 
   <body>
       <div class="container">
           <header>
           <div class="row">
-            <div class="col-3 logo">JESSY JIN</div>
-            <nav class="col-9">
+            <div class="col-5 logo">JESSY JIN</div>
+            <nav class="col-7">
                 <div class="sm-menu">
                     <nav>
                         <ul class="sm-menu-list">
@@ -35,9 +37,16 @@
                     <span class="hamburgler-icon"></span>
                 </div>
                     <ul class="menu">
-                        <li><a href="#">HOME</a></li>
+                        <li class="test"><a href="index.html" class="current">HOME</a></li>
                         <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
+                        <div class="dropdownnav">
+                            <a class="nav-portfolio"href="#">PORTFOLIO</a>
+                            <div class="dropdownnav-content">
+                              <a href="#">INSTAGRAM</a>
+                              <a href="#">EDITORIAL</a>
+                              <a href="#">COLLECTION</a>
+                            </div>
+                        </div>
                         <li><a href="#">WORKSHOP</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
@@ -56,12 +65,10 @@
      <div class="container">
         <footer>
             <div class="row">
-                <div class="col-3">&copy; Jessy Jin</div>
-            <div class="col-9">
-                <ul>
-                    <li><i class="fab fa-instagram fa-lg"></i></li>
-                    <li><i class="fab fa-linkedin fa-lg"></i></li>
-                </ul>
+                <div class="col-8 copyright">&copy; Jessy Jin</div>
+            <div class="col-4 socialicons">
+                    <div><a href="https://www.instagram.com/jessyjinstylist/" target="_blank"><i class="fab fa-instagram fa-lg" ></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/soyeon-jessy-jin-37364467/" target="_blank"><i class="fab fa-linkedin fa-lg" ></i></a></div>
             </div>
             </div>
         </footer>
