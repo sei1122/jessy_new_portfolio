@@ -85,7 +85,6 @@ a:active, a:hover{
     color: #222222;
 }
 
-
 /************* navi *************/
 nav{
     font-family: Montserrat,sans-serif;
@@ -113,6 +112,7 @@ nav ul li, .nav-portfolio{
 a.current{
     color:black;
 }
+
 
 
 /************* nav dropdown *************/
@@ -144,6 +144,9 @@ a.current{
   .dropdownnav:hover .dropdownnav-content {display: block;}
 
 
+  ul.sm-menu-list{
+      text-align: left;
+  }
 
 
 /****** column setting ******/
@@ -216,7 +219,7 @@ a:hover{
     -o-background-size: cover;
     background-size: cover;
     width:100%;
-    height: 680px;
+    height: 650px;
 }
 
 .hero-title{
@@ -262,7 +265,7 @@ a:hover{
 
 /********* HUMBERGER MENU *********/
 
-@media (max-width:817px) {
+@media (max-width:894px) {
     .smmenu-icon-wrapper {
         position: absolute;
         top: 1.6em;
@@ -337,6 +340,7 @@ a:hover{
     .hamburgler-active .sm-menu {
         opacity: 1;
         pointer-events: initial;
+        
     }
 
     .sm-menu-list {
@@ -361,9 +365,9 @@ a:hover{
         color: #fff;
     }
 
-    .sm-menu-list {
+    /* .sm-menu-list {
         width: 100px;
-    }
+    } */
 
     .sm-menu-list li {
         padding-bottom: 20px;
@@ -376,7 +380,7 @@ a:hover{
 
     .sm-menu {
         z-index: 1;
-        height: 300px;
+        /* height: 300px; */
     }
 
     /* hide menu */
@@ -387,11 +391,28 @@ a:hover{
     /* show hamburgler menu */
     .sm-menu {
         display: block;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
     }
 
     nav ul li{
         display:block;
     }
+
+    .dropdownnav-content{
+        margin-left:0px;
+    }
+
+    .dropdownnav-content a{
+        color:#bbbbbb;
+    }
+
 }
 
 @media (max-width:768px){
