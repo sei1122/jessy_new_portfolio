@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>Jessy Jin</title>
     <meta name="description" content="Jessy Jin porfolio" />
@@ -13,92 +14,79 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 
-  </head>
+</head>
 
 
-  <body>
-      <div class="container">
-          <header>
-          <div class="row">
-            <div class="col-5 logo">JESSY JIN</div>
-            <nav class="col-7">
-                <div class="sm-menu">
-                    <nav>
-                        <ul class="sm-menu-list">
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">PORTFOLIO</a>
-                                <button class="dropdown-btn"> 
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-5 logo">JESSY JIN</div>
+                <nav class="col-7">
+                    <div class="sm-menu">
+                        <nav>
+                            <ul class="sm-menu-list">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li class="nav-set"><a href="#">PORTFOLIO</a></li>
+                                <div class="dropdown-btn">
+                                        <i class="fa fa-caret-down fa-lg"></i>
+                                </div>
                                 <div class="dropdownnav-content">
                                     <a href="#">INSTAGRAM</a>
                                     <a href="#">EDITORIAL</a>
                                     <a href="#">COLLECTION</a>
                                 </div>
-                            </li>
-                            <li><a href="#">WORKSHOP</a></li>
-                            <li><a href="#">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div id="sm-menu-f" class="smmenu-icon-wrapper">
-                    <span class="hamburgler-icon"></span>
-                </div>
+                                </li>
+                                <div style="clear:both"></div>
+                                <li><a href="#">WORKSHOP</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="sm-menu-f" class="smmenu-icon-wrapper">
+                        <span class="hamburgler-icon"></span>
+                    </div>
                     <ul class="menu">
                         <li class="test"><a href="index.html" class="current">HOME</a></li>
                         <li><a href="#">ABOUT</a></li>
                         <div class="dropdownnav">
-                            <a class="nav-portfolio"href="#">PORTFOLIO</a>
+                            <a class="nav-portfolio" href="#">PORTFOLIO</a>
                             <div class="dropdownnav-content">
-                              <a href="#">INSTAGRAM</a>
-                              <a href="#">EDITORIAL</a>
-                              <a href="#">COLLECTION</a>
+                                <a href="#">INSTAGRAM</a>
+                                <a href="#">EDITORIAL</a>
+                                <a href="#">COLLECTION</a>
                             </div>
                         </div>
                         <li><a href="#">WORKSHOP</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
-            </nav>
-          </div>
-          </header>
-     </div>
-     <section class="hero-img">
+                </nav>
+            </div>
+        </header>
+    </div>
+    <section class="hero-img">
         <div class="hero-title">
             <h1>
                 JESSY JIN
-           </h1>
-           <h2 class="hero-subtitle">Loreal colorist, Hair stylist</h2>
+            </h1>
+            <h2 class="hero-subtitle">Loreal colorist, Hair stylist</h2>
         </div>
-     </section>
-     <div class="container">
+    </section>
+    <div class="container">
         <footer>
             <div class="row">
                 <div class="col-8 copyright">&copy; Jessy Jin</div>
-            <div class="col-4 socialicons">
-                    <div><a href="https://www.instagram.com/jessyjinstylist/" target="_blank"><i class="fab fa-instagram fa-lg" ></i></a></div>
-                    <div><a href="https://www.linkedin.com/in/soyeon-jessy-jin-37364467/" target="_blank"><i class="fab fa-linkedin fa-lg" ></i></a></div>
-            </div>
+                <div class="col-4 socialicons">
+                    <div><a href="https://www.instagram.com/jessyjinstylist/" target="_blank"><i
+                                class="fab fa-instagram fa-lg"></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/soyeon-jessy-jin-37364467/" target="_blank"><i
+                                class="fab fa-linkedin fa-lg"></i></a></div>
+                </div>
             </div>
         </footer>
-     </div>
-     <script src="js/main.js"></script>
-     <script>
-        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-        
-        for (i = 0; i < dropdown.length; i++) {
-          dropdown[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-          } else {
-          dropdownContent.style.display = "block";
-          }
-          });
-        }
-        </script>
-  </body>
+    </div>
+    <script src="js/main.js"></script>
+    
+</body>
 </html>
