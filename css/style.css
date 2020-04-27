@@ -417,11 +417,22 @@ a {
     grid-template-rows: repeat(3, 300px);
 }
 
-.item {
+/* .item {
     background-color: #1EAAFC;
     background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
     color: #fff;
+} */
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+.about-content{
+    padding: 30px;
+}
+
 
 /************* portfolio *************/
 .wrapper-insta {
@@ -436,6 +447,7 @@ a {
     background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
     color: #fff;
 }
+
 
 /************* portfolio enlarge *************/
 
@@ -455,7 +467,7 @@ p.names {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, auto);
-    grid-gap: 15px;
+    grid-gap: 30px;
 }
 
 img.testimonial {
@@ -465,15 +477,22 @@ img.testimonial {
     margin-right: auto;
 }
 
-p.tm-content {
+.tm-content {
+    margin-top: -30px;
     padding: 15px;
+    
 }
+.tm-content p{
+    font-style: italic;
+    font-size:16px;
+}
+
 
 .wrapper-tstm{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, auto);
-    grid-gap: 15px;
+    grid-gap: 30px;
 }
 
 .wrapper-wkimges {
@@ -483,14 +502,76 @@ p.tm-content {
     grid-gap: 15px;
 }
 
+i.fas.fa-quote-left{
+    color:#DBD5D5;
+}
+
+.tm-names{
+    float: right;
+    margin-top: 5%;
+    font-size:14px;
+}
+
 
 
 
 /************* contact *************/
+.wrapper-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-gap: 15px;
+}
+
+h3.popm{
+    font-weight: 600;
+}
+
+p.pomp_address{
+    line-height:2.0;
+    margin-bottom: 5%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 13px;
+    margin-bottom: 16px;
+    resize: vertical;
+    letter-spacing: 1px;
+  }
+
+  input[type=submit] {
+    background-color: #222222;
+    color: white;
+    padding: 16px 70px;
+    border: none;
+    cursor: pointer;
+    display:block;
+    margin:5% auto 0 auto;
+    letter-spacing: 1px;
+  }
+
+  
+
+.space5{
+ margin-top:5%;
+}
+
+.space5-bt
+{
+    margin-bottom:5%;
+}
 
 /****************** Media Quaory ******************/
 
 /********* HUMBERGER MENU *********/
+@media (max-width:1140px){
+    .container{
+        margin:1% 30px 1% 30px;
+    }
+}
 
 @media (max-width:894px) {
     .smmenu-icon-wrapper {
@@ -726,6 +807,26 @@ p.tm-content {
         grid-gap: 15px;
     }
 
+    .wrapper-wkimges{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-gap: 15px;
+    }
+
+     /********* contact ********/
+    .wrapper-contact {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    input[type=text], select, textarea{
+        margin-top: 3px;
+    }
+
+    input[type=submit]{
+        margin-top:2%;
+    }
+
 }
 
 @media (max-width:425px) {
@@ -761,3 +862,7 @@ p.tm-content {
         font-size: 14px;
     }
 }
+
+
+
+
