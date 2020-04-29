@@ -450,6 +450,8 @@ a {
 
 
 /************* portfolio enlarge *************/
+
+/* overwrite cssbox */
 span.cssbox_full{
     background-color: rgba(255, 255, 255, 0.9);
 }
@@ -575,6 +577,10 @@ input[type=text], select, textarea {
 .space5-bt
 {
     margin-bottom:5%;
+}
+
+img.map{
+    width:80%;
 }
 
 
