@@ -10,12 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/d534dbbc60.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/brl4dlv.css">
-    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/simple-lightbox.css"> -->
+    <link rel="stylesheet" href="css/cssbox.css">
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.mixitup.min.js"></script> -->
+
 
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -30,7 +34,7 @@
                                 <li><a href="about.html">ABOUT</a></li>
                                 <li class="nav-set"><a href="instagram.html">PORTFOLIO</a></li>
                                 <div class="dropdown-btn">
-                                        <i class="fa fa-caret-down fa-lg"></i>
+                                    <i class="fa fa-caret-down fa-lg"></i>
                                 </div>
                                 <div class="dropdownnav-content">
                                     <a href="instagram.html">INSTAGRAM</a>
@@ -51,7 +55,7 @@
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <div class="dropdownnav">
-                            <a class="nav-portfolio current" href="instagram.html" >PORTFOLIO</a>
+                            <a class="nav-portfolio current" href="instagram.html">PORTFOLIO</a>
                             <div class="dropdownnav-content">
                                 <a href="instagram.html">INSTAGRAM</a>
                                 <a href="editorial.html">EDITORIAL</a>
@@ -65,21 +69,35 @@
             </div>
         </header>
         <!-- main -->
-       <div class="main">
+        <div class="main">
             <h1>INSTAGRAM</h1>
             <div class="wrapper-insta space5-bt">
-                <div class="item2 item1-2">
-                    <a href="img/7.png" data-lightbox="insta">
-                        <img src="img/7.png" alt="">
+                <div class="item2 item1-2 cssbox">
+                    <a id="image1" href="#image1">
+                        <img class="cssbox_thumb" src="img/10.png">
+                    <span class="cssbox_full">
+                        <img src="img/10.png">
+                    </span>
                     </a>
+                    <a class="cssbox_close" href="#void"></a>
+                    <a class="cssbox_next" href="#image2">&gt;</a>
                 </div>
 
-                <div class="item2 item2-2" >
-                    <a href="img/8.png" data-lightbox="insta">
-                        <img src="img/8.png" alt="">
+
+
+
+
+                <div class="item2 item2-2">
+                    <a id="image2" href="#image1">
+                        <img class="cssbox_thumb" src="img/11.png">
+                    <span class="cssbox_full">
+                        <img src="img/11.png">
+                    </span>
                     </a>
+                    <a class="cssbox_close" href="#void"></a>
+                    <a class="cssbox_next" href="#image2">&gt;</a>
                 </div>
-                <div class="item2 item3-2" >3</div>
+                <div class="item2 item3-2">3</div>
                 <div class="item2 item4-2">4</div>
                 <div class="item2 item5-2">5</div>
                 <div class="item2 item6-2">6</div>
@@ -89,8 +107,7 @@
                 <div class="item2 item10-2">10</div>
                 <div class="item2 item11-2">11</div>
                 <div class="item2 item12-2">12</div>
-            </div>
-        </div>
+            </div> -->
         <!-- footer -->
         <footer>
             <div class="row">
@@ -98,13 +115,19 @@
                 <div class="col-4 socialicons">
                     <div><a href="https://www.instagram.com/jessyjinstylist/" target="_blank"><i
                                 class="fab fa-instagram fa-lg"></i></a></div>
-                    <div><a href="https://www.linkedin.com/in/soyeon-jessy-jin-37364467/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/soyeon-jessy-jin-37364467/" target="_blank"><i
+                                class="fab fa-linkedin fa-lg"></i></a></div>
                 </div>
             </div>
         </footer>
     </div>
-    <script src="js/lightbox.js"></script>
-    <!-- <script src="js/lightbox-plus-jquery.min.js"></script> -->
+    <!-- <script src="js/lightbox.js"></script>
+    <script src="js/simple-lightbox.js"></script> -->
     <script src="js/main.js"></script>
+    <script>
+        
+
+    </script>
 </body>
+
 </html>

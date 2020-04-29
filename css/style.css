@@ -450,6 +450,21 @@ a {
 
 
 /************* portfolio enlarge *************/
+span.cssbox_full{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+span.cssbox_full img{
+    box-shadow: none;
+    max-height: 80%;
+    max-width: 80%;
+}
+
+a.cssbox_close {
+    top: 5%;
+    right: 7%;
+}
+
 
 /************* portfolio collection *************/
 p.nomination {
@@ -514,7 +529,6 @@ i.fas.fa-quote-left{
 
 
 
-
 /************* contact *************/
 .wrapper-contact {
     display: grid;
@@ -553,7 +567,6 @@ input[type=text], select, textarea {
     letter-spacing: 1px;
   }
 
-  
 
 .space5{
  margin-top:5%;
@@ -563,6 +576,8 @@ input[type=text], select, textarea {
 {
     margin-bottom:5%;
 }
+
+
 
 /****************** Media Quaory ******************/
 
