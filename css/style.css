@@ -408,6 +408,7 @@ a {
     letter-spacing: 1px;
     font-size: 23px;
     margin-top: 6px;
+    text-transform: none;
 }
 
 /************* about *************/
