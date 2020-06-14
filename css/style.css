@@ -472,10 +472,15 @@ a.cssbox_close {
 
 
 /************* portfolio collection *************/
+h2.co-title{
+    font-weight: 500;
+}
+
 p.nomination {
     font-size: 18px;
     font-style: italic;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
+    font-weight:500;
 }
 
 p.names {
