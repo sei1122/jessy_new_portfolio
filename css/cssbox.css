@@ -36,7 +36,8 @@ span.cssbox_full img {
 
 a.cssbox_close,
 a.cssbox_prev,
-a.cssbox_next {
+a.cssbox_next,
+a.insta_link{
   z-index: 999;
   position: fixed;
   text-decoration: none;
@@ -61,16 +62,17 @@ a.cssbox_next {
 }
 
 a.cssbox_prev {
-  left: 5%;
+  left: 6%;
 }
 
 a.cssbox_next {
-  right: 5%;
+  right: 6%;
 }
 
 a:target ~ a.cssbox_close,
 a:target ~ a.cssbox_prev,
-a:target ~ a.cssbox_next {
+a:target ~ a.cssbox_next,
+a:target ~ a.insta_link{
   visibility: visible;
 }
 

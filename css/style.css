@@ -461,13 +461,19 @@ span.cssbox_full{
 
 span.cssbox_full img{
     box-shadow: none;
-    max-height: 80%;
-    max-width: 80%;
+    width:auto;
 }
 
 a.cssbox_close {
     top: 5%;
     right: 7%;
+}
+
+a.insta_link {
+    position: fixed;
+    top: 14%;
+    right: 6.8%;
+    font-size: 24px;
 }
 
 
