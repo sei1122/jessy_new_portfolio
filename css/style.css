@@ -845,7 +845,7 @@ img.map{
     /********* portfolio instagram ********/
     .wrapper-insta {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 250px);
+        grid-template-rows: repeat(6, auto);
     }
 
     /********* workshop ********/
@@ -902,7 +902,7 @@ img.map{
 
     .wrapper-insta {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12, 250px);
+        grid-template-rows: repeat(12, auto);
     }
 
     h1{
