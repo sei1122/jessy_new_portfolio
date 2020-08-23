@@ -366,6 +366,7 @@ a {
 
 .col-8.copyright {
     color: #bbbbbb;
+    font-size:14px;
 }
 
 .col-4.socialicons a:link,
@@ -776,7 +777,7 @@ h1.thanks{
     /********* nav dropdown setting ********/
 
     li.nav-set {
-        padding-bottom: 8px;
+        padding-bottom: 20px;
     }
 
     .dropdown-btn {
@@ -786,7 +787,7 @@ h1.thanks{
     i.fa.fa-caret-down.fa-lg {
         float: right;
         position: relative;
-        bottom: 21px;
+        bottom: 33px;
     }
 
     .dropdown-btn.active {
