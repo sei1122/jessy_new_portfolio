@@ -14,11 +14,19 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
 
+        $(document).ready(function(){
+        
+            $('#page_effect').fadeIn(2000);
+        
+        });
+        
+        </script>
 </head>
 
-
 <body>
+    <div id="page_effect" style="display:none;">
     <div class="container">
         <header>
             <div class="row">
@@ -95,6 +103,6 @@
         </footer>
     </div>
     <script src="js/main.js"></script>
-    
+</div>  <!-- close lazy loading -->
 </body>
 </html>

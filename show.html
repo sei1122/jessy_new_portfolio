@@ -14,9 +14,18 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
 
+        $(document).ready(function(){
+        
+            $('#page_effect').fadeIn(2000);
+        
+        });
+        
+    </script>
 </head>
 <body>
+    <div id="page_effect" style="display:none;">
     <div class="container">
         <header>
             <div class="row">
@@ -87,7 +96,7 @@
         <!-- footer -->
         <footer>
             <div class="row">
-                <div class="col-8 copyright">&copy; Jessy Jin</div>
+                <div class="col-8 copyright">&copy; Jessy Jin &nbsp; <a href="https://seikoigi.com" target="_blank">Design: Seiko Igi</a></div>
                 <div class="col-4 socialicons">
                     <div><a href="https://www.instagram.com/jessyjinstylist/" target="_blank"><i
                                 class="fab fa-instagram fa-lg"></i></a></div>
@@ -98,5 +107,6 @@
         </footer>
     </div>
     <script src="js/main.js"></script>
+    </div><!--close lazy loading-->
 </body>
 </html>

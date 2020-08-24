@@ -2,8 +2,8 @@
 
 	$to = "jessyj.loreal@gmail.com"; #set addres to send for to 
 	$subject = "Message from Portfolio"; #set the subject line 
-	$headers = "From: FormMailer@jessyj.loreal@gmail.com". "\r\n" .			
-				"Reply-To: FormMailer@jessyj.loreal@gmail.com" . "\r\n"; #set the from address 
+	$headers = "From: FormMailer@jessyjin.com". "\r\n" .			
+				"Reply-To: FormMailer@jessyjin.com" . "\r\n"; #set the from address 
 	$forward = 1; # redirect? 1 : yes || 0 : no 
 	$location = "thanks.html"; #set page to redirect to, if 1 is above 
 
@@ -12,11 +12,11 @@
 	$time = date("h:i:sa"); 
 
 	$msg = "Message from Portfolio site. Submitted on $date at $time.\n\n"; 
-	     
+	    
 	foreach ($_POST as $key => $value) { 
 	    $msg .= ucfirst ($key) ." : ". $value . "\n"; 
 	} 
-	mail($to, $subject, $msg, $headers, " -fFormMailer@jessyj.loreal@gmail.com"); 
+	mail($to, $subject, $msg, $headers, " -fFormMailer@jessyjin.com"); 
 	if ($forward == 1) { 
 	    echo ('<script type="text/javascript">location.href = "' . $location . '"</script>');  
 	} 
