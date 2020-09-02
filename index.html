@@ -9,100 +9,114 @@
     <meta name="author" content="seiko igi" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/d534dbbc60.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/brl4dlv.css">
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
     <script type="text/javascript">
+        $(document).ready(function () {
 
-        $(document).ready(function(){
-        
             $('#page_effect').fadeIn(2000);
-        
+
         });
-        
-        </script>
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177101010-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177101010-1');
+    </script>
 </head>
 
 <body>
     <div id="page_effect" style="display:none;">
-    <div class="container">
-        <header>
-            <div class="row">
-                <div class="col-5 logo">JESSY JIN</div>
-                <nav class="col-7">
-                    <div class="sm-menu">
-                        <nav>
-                            <!-- mobile menu -->
-                            <ul class="sm-menu-list">
-                                <li><a href="index.html">HOME</a></li>
-                                <li><a href="about.html">ABOUT</a></li>
-                                <li class="nav-set"><a href="instagram.html">PORTFOLIO</a></li>
-                                <div class="dropdown-btn">
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="col-5 logo">JESSY JIN</div>
+                    <nav class="col-7">
+                        <div class="sm-menu">
+                            <nav>
+                                <!-- mobile menu -->
+                                <ul class="sm-menu-list">
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="about.html">ABOUT</a></li>
+                                    <li class="nav-set"><a href="instagram.html">PORTFOLIO</a></li>
+                                    <div class="dropdown-btn">
                                         <i class="fa fa-caret-down fa-lg"></i>
-                                </div>
+                                    </div>
+                                    <div class="dropdownnav-content">
+                                        <a href="instagram.html">INSTAGRAM</a>
+                                        <a href="editorial.html">EDITORIAL</a>
+                                        <a href="collection.html">COLLECTION</a>
+                                        <!-- <a href="show.html">SHOW</a> -->
+                                    </div>
+                                    </li>
+                                    <!-- <li class="clear"><a href="workshop.html">WORKSHOP</a></li> -->
+                                    <li><a href="contact.html">CONTACT</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="sm-menu-f" class="smmenu-icon-wrapper">
+                            <span class="hamburgler-icon"></span>
+                        </div>
+                        <!-- web menu -->
+                        <ul class="menu">
+                            <li><a href="index.html" class="current">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <div class="dropdownnav">
+                                <a class="nav-portfolio" href="instagram.html">PORTFOLIO</a>
                                 <div class="dropdownnav-content">
                                     <a href="instagram.html">INSTAGRAM</a>
                                     <a href="editorial.html">EDITORIAL</a>
                                     <a href="collection.html">COLLECTION</a>
                                     <!-- <a href="show.html">SHOW</a> -->
                                 </div>
-                                </li>
-                                <!-- <li class="clear"><a href="workshop.html">WORKSHOP</a></li> -->
-                                <li><a href="contact.html">CONTACT</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div id="sm-menu-f" class="smmenu-icon-wrapper">
-                        <span class="hamburgler-icon"></span>
-                    </div>
-                    <!-- web menu -->
-                    <ul class="menu">
-                        <li><a href="index.html" class="current">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <div class="dropdownnav">
-                            <a class="nav-portfolio" href="instagram.html">PORTFOLIO</a>
-                            <div class="dropdownnav-content">
-                                <a href="instagram.html">INSTAGRAM</a>
-                                <a href="editorial.html">EDITORIAL</a>
-                                <a href="collection.html">COLLECTION</a>
-                                <!-- <a href="show.html">SHOW</a> -->
                             </div>
-                        </div>
-                        <!-- <li><a href="workshop.html">WORKSHOP</a></li> -->
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </div>
-    <!-- main -->
-    <div class="hero-img">
-        <div class="hero-title">
-            <h1>
-                JESSY JIN
-            </h1>
-            <h2>Hair Artist, Industry Educator, <br>
-                Portfolio Colourist of L’Oreal Pro
-            </h2>
-        </div>
-    </div>
-    <!-- footer -->
-    <div class="container">
-        <footer class="f-home">
-            <div class="row">
-                <div class="col-8 copyright">&copy; Jessy Jin &nbsp; <a href="https://seikoigi.com" target="_blank">Design: Seiko Igi</a></div>
-                <div class="col-4 socialicons">
-                    <div><a href="https://www.instagram.com/jessyjinstylist/" target="_blank"><i
-                                class="fab fa-instagram fa-lg"></i></a></div>
-                    <div><a href="https://www.linkedin.com/in/soyeon-jessy-jin-37364467/" target="_blank"><i
-                                class="fab fa-linkedin fa-lg"></i></a></div>
+                            <!-- <li><a href="workshop.html">WORKSHOP</a></li> -->
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
                 </div>
+            </header>
+        </div>
+        <!-- main -->
+        <div class="hero-img">
+            <div class="hero-title">
+                <h1>
+                    JESSY JIN
+                </h1>
+                <h2>Hair Artist, Industry Educator, <br>
+                    Portfolio Colourist of L’Oreal Pro
+                </h2>
             </div>
-        </footer>
-    </div>
-    <script src="js/main.js"></script>
-</div>  <!-- close lazy loading -->
+        </div>
+        <!-- footer -->
+        <div class="container">
+            <footer class="f-home">
+                <div class="row">
+                    <div class="col-8 copyright">&copy; Jessy Jin &nbsp; <a href="https://seikoigi.com"
+                            target="_blank">Design: Seiko Igi</a></div>
+                    <div class="col-4 socialicons">
+                        <div><a href="https://www.instagram.com/jessyjinstylist/" target="_blank"><i
+                                    class="fab fa-instagram fa-lg"></i></a></div>
+                        <div><a href="https://www.linkedin.com/in/soyeon-jessy-jin-37364467/" target="_blank"><i
+                                    class="fab fa-linkedin fa-lg"></i></a></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/main.js"></script>
+    </div> <!-- close lazy loading -->
 </body>
+
 </html>
