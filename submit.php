@@ -1,5 +1,4 @@
 <?PHP
-
 	$to = "jessyj.loreal@gmail.com"; #set addres to send for to 
 	$subject = "Message from Portfolio"; #set the subject line 
 	$headers = "From: FormMailer@jessyjin.com". "\r\n" .			

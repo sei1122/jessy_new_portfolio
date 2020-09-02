@@ -618,6 +618,10 @@ img.map{
     width:80%;
 }
 
+.form-error{
+    margin-top:20px;
+}
+
 
 /************* thanks *************/
 h1.thanks{
