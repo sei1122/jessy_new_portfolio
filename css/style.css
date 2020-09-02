@@ -175,6 +175,10 @@ h2 {
     letter-spacing: 1px;
 }
 
+h3{
+    font-size:20px;
+}
+
 p {
     font-size: 18px;
     letter-spacing: 0.1px;
@@ -235,6 +239,7 @@ nav ul li,
 .nav-portfolio {
     display: inline;
     margin-left: 20px;
+    font-size:16px;
     letter-spacing: 0.5px;
 }
 
@@ -242,6 +247,10 @@ nav ul li,
 .sm-menu {
     display: none;
 }
+
+/* ul.sm-menu-list a{
+    font
+} */
 
 a.current {
     color: black;
@@ -270,7 +279,7 @@ a.current {
     padding: 10px 12px 7px 12px;
     text-decoration: none;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .dropdownnav-content a:hover {
@@ -791,7 +800,7 @@ h1.thanks{
     i.fa.fa-caret-down.fa-lg {
         float: right;
         position: relative;
-        bottom: 33px;
+        bottom: 36px;
     }
 
     .dropdown-btn.active {
@@ -805,7 +814,7 @@ h1.thanks{
     .dropdownnav-content {
         position: relative;
         background: transparent;
-        margin-top: -10px;
+        margin-top: -27px;
         margin-left: 8px;
         margin-bottom: 20px;
         padding-bottom: 0px;
@@ -904,6 +913,7 @@ h1.thanks{
     }
 
 }
+
 
 @media (max-width:425px) {
     .logo {
