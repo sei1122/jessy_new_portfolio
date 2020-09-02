@@ -958,6 +958,11 @@ h1.thanks{
         margin-top:10%;
     }
 
+    /********** portfolio **********/
+    a.insta_link {
+        top: 11%;
+    }
+
     /****** footer ******/
     .col-8.copyright, .col-4.socialicons{
         padding: 0 0 15px 0;
