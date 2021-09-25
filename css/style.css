@@ -407,8 +407,8 @@ a {
     -o-background-size: cover;
     background-size: cover;
     background-position: center top;
-    width: 100%;
-    height: 650px;
+    width: 100w;
+    height: 85vh;
 }
 
 .hero-title {
@@ -651,15 +651,15 @@ h1.thanks{
 
 /****************** Media Quaory ******************/
 
-@media (min-width:1440px) {
+/* @media (min-width:1440px) {
     .hero-img2{
         height: 1000px;
     }
 
-}
+} */
 
 /* Portrait */
-@media only screen 
+/* @media only screen 
   and (min-width: 1024px) 
   and (max-height: 1366px) 
   and (orientation: portrait) 
@@ -667,7 +667,7 @@ h1.thanks{
    .hero-title{
        top:30%;
    }
-}
+} */
 
 
 
