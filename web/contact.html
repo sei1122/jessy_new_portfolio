@@ -110,7 +110,7 @@
                         <div>
                             <h2>Contact Me</h2>
                             <br>
-                            <form action="submit.php" method="post" onsubmit="return ValidateEmail()">
+                            <form action="submit" method="post" onsubmit="return ValidateEmail()">
                                 <!-- <label for="fname">Name</label> -->
                                 <input type="text" id="name" name="name" placeholder="Name" value=""><br>
                                 <!-- <label for="fname">Email</label> -->
@@ -121,6 +121,8 @@
                                 <textarea id="message" name="message" placeholder="Message" style="height:170px"
                                     value=""></textarea><br>
                                 <input type="submit" value="Submit">
+                                <div class="g-recaptcha" data-sitekey="6LdV-0AfAAAAAB92tddUfp0i-h40DLFeAJeg3hPS"></div>
+								
                                 <div class="form-error">
                                     <p class="name-error"></p>
                                     <p class="email-error"></p>
