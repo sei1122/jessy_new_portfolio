@@ -125,7 +125,7 @@ func sendHandle(rw http.ResponseWriter, req *http.Request) {
 	datestr := fmt.Sprintf(now.Format("2006-01-02 at 15:04:05"))
 
 	msg := ""
-	msg += fmt.Sprintf("Message from Portfolio site.  Submitted on %s.\n\n", datestr)
+	msg += fmt.Sprintf("Message from jessy_new_portfolio site.  Submitted on %s.\n\n", datestr)
 
 	prettyJSON, err := json.MarshalIndent(c, "", "    ")
 	if err != nil {
@@ -134,9 +134,9 @@ func sendHandle(rw http.ResponseWriter, req *http.Request) {
 	}
 	msg += string(prettyJSON)
 
-	from := mail.NewEmail("FormMailer", "seikoigi@seikoigi.com")
+	from := mail.NewEmail("FormMailer", "jessyjin@jessyjin.com")
 	subject := "Message from Seiko's Website"
-	to := mail.NewEmail("Seiko Igi", "seikoigi@gmail.com")
+	to := mail.NewEmail("Jessy Jin", "jessyj.loreal@gmail.com")
 
 	message := mail.NewSingleEmail(from, subject, to, msg, msg)
 	client := sendgrid.NewSendClient(os.Getenv("SENDGRID_API_KEY"))
@@ -203,7 +203,7 @@ func main() {
 	} else {
 		certManager := autocert.Manager{
 			Prompt:     autocert.AcceptTOS,
-			HostPolicy: autocert.HostWhitelist("seikoigi.com", "www.seikoigi.com"), //Your domain here
+			HostPolicy: autocert.HostWhitelist("jessyjin.com", "www.jessyjin.com"), //Your domain here
 			Cache:      autocert.DirCache("certs"),                                 //Folder for storing certificates
 		}
 		server := &http.Server{

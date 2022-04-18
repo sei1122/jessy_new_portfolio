@@ -36,12 +36,12 @@ sudo apt install git-all
 apt-get install psmisc
 
 # clone website from git
-sudo killall portfolio
+sudo killall jessy_new_portfolio
 ps -aux
-rm -rf portfolio
-git clone -b main https://github.com/sei1122/portfolio
-cd portfolio
-go mod init github.com/sei1122/portfolio
+rm -rf jessy_new_portfolio
+git clone https://github.com/sei1122/jessy_new_portfolio
+cd jessy_new_portfolio
+go mod init github.com/sei1122/jessy_new_portfolio
 go mod tidy
 go build
 
@@ -49,11 +49,11 @@ go build
 sudo snap install core; sudo snap refresh core
 sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
-sudo certbot certonly --standalone -d seikoigi.com -d www.seikoigi.com
-# Certificate is saved at: /etc/letsencrypt/live/seikoigi.com/fullchain.pem
-# Key is saved at:         /etc/letsencrypt/live/seikoigi.com/privkey.pem
+sudo certbot certonly --standalone -d jessyjin.com -d www.jessyjin.com
+# Certificate is saved at: /etc/letsencrypt/live/jessyjin.com/fullchain.pem
+# Key is saved at:         /etc/letsencrypt/live/jessyjin.com/privkey.pem
 
 # run the server in the background
-nohup sudo PORT=80 PROJECT_ID=831860464490 ./portfolio &
+nohup sudo PORT=80 PROJECT_ID=817745931695 ./jessy_new_portfolio &
 
 set +x
