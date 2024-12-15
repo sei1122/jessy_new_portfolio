@@ -3,12 +3,12 @@ set -x
 
 # install golang
 sudo apt update
-wget https://golang.org/dl/go1.17.3.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.17.3.linux-amd64.tar.gz
-sudo echo "export GOPATH=\$HOME/go" > ~/.profile
-sudo echo "export PATH=\$PATH:/usr/local/go/bin:\$GOPATH/bin:~/bin/"  >> ~/.profile
-sudo echo "export GOBIN=\$GOPATH/bin" >> ~/.profile
-source ~/.profile
+wget https://golang.org/dl/go1.20.6.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.6.linux-amd64.tar.gz
+sudo echo "export GOPATH=\$HOME/go" > ~/.bashrc
+sudo echo "export PATH=\$PATH:/usr/local/go/bin:\$GOPATH/bin:~/bin/"  >> ~/.bashrc
+sudo echo "export GOBIN=\$GOPATH/bin" >> ~/.bashrc
+source ~/.bashrc
 mkdir -p ~/go/{bin,src,pkg}
 mkdir -p ~/log
 mkdir -p ~/bin
@@ -38,18 +38,21 @@ sudo apt-get install psmisc
 # clone website from git
 sudo killall jessy_new_portfolio
 ps -aux
-rm -rf jessy_new_portfolio
+sudo rm -rf jessy_new_portfolio
 git clone https://github.com/sei1122/jessy_new_portfolio
 cd jessy_new_portfolio
 go mod init github.com/sei1122/jessy_new_portfolio
 go mod tidy
 go build
+mkdir certs
+chmod 666 certs
 
+# ssl in go server now
 # get ssl for https (has user input?) 
-sudo snap install core; sudo snap refresh core
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
-sudo certbot certonly --standalone -d jessyjin.com -d www.jessyjin.com
+# sudo snap install core; sudo snap refresh core
+# sudo snap install --classic certbot
+# sudo ln -s /snap/bin/certbot /usr/bin/certbot
+# sudo certbot certonly --standalone -d jessyjin.com -d www.jessyjin.com
 # Certificate is saved at: /etc/letsencrypt/live/jessyjin.com/fullchain.pem
 # Key is saved at:         /etc/letsencrypt/live/jessyjin.com/privkey.pem
 

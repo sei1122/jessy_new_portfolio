@@ -4,8 +4,8 @@
 gcloud compute ssh seikoigi_gmail_com@instance-1 --command="rm -rf bin log"
 gcloud compute ssh seikoigi_gmail_com@instance-1 --command="mkdir bin"
 gcloud compute ssh seikoigi_gmail_com@instance-1 --command="mkdir log"
-gcloud compute scp cloudscript-startup.sh seikoigi_gmail_com@instance-1:./
 echo running cloudscript-startup.sh on remote computer
+gcloud compute scp cloudscript-startup.sh seikoigi_gmail_com@instance-1:./     
 gcloud compute ssh seikoigi_gmail_com@instance-1 --command="source ~/cloudscript-startup.sh 2>&1 | tee ~/log/startup.txt"
 gcloud compute scp seikoigi_gmail_com@instance-1:./log/startup.txt . && code startup.txt
 
